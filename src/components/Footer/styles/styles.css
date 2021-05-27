@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer h1 {
+    margin-bottom: 30px;
+}
+.footer .section__social-media {
+    display: flex;
+    flex-direction: column;
+}
+.footer .section__social-media .social-media__title {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    color: brown;
+}
+.footer .section__social-media .social-media__container {
+    display: flex;
+    flex-direction: column;
+}
+.footer .section__social-media .social-media__container a {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
