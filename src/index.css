@@ -13,3 +13,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+#root {
+    width: 100%;
+    min-width: 375px;
+}

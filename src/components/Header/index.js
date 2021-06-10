@@ -1,19 +1,46 @@
-import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from './logo.svg';
+import { GrMenu, GrClose } from 'react-icons/gr'
 import './styles/styles.css';
 
 export const Header = () => {
+  const [show, setShow] = useState(false);
+
+  function handleClick(ev) {
+    console.log(ev)
+    if(show) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  }
+
   return (
-    <header>
-      <img src={logo} alt='logo'/>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contacto">Contact</Link></li>
-        </ul>
-      </nav>
+    <header className="Header">
+      <div className="Profile-Container">
+        <h1 className="Logo">{'< ela.dev />'}</h1>
+      </div>
+      <div className="Menu-Container" onClick={handleClick}>
+        {
+          show ? <GrClose className="Icon-Style" /> : <GrMenu className="Icon-Style" />
+        }
+        {
+          show && <nav className="Nav-Bar">
+            <ul className="List-Nav">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/contacto">Contact</Link></li>
+            </ul>
+          </nav>
+        }
+        <nav className="Nav-Bar2">
+            <ul className="List-Nav2">
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/contacto">Contact</Link></li>
+            </ul>
+          </nav>     
+      </div>
     </header>
-  )
+  );
 }

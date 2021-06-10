@@ -1,3 +1,7 @@
+.HomeMain {
+    width: 100%;
+    min-width: 375px;
+}
 .section-one {
     padding: 40px;
     display: flex;
@@ -5,8 +9,13 @@
     justify-content: space-around;
 }
 .AsideHome {
-    width: 500px;
+    width: 100%;
     padding: 20px;
+}
+.AsideHome em {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
 }
 .AsideHome h2 {
     margin-bottom: 30px;
