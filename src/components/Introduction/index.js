@@ -9,18 +9,16 @@ export const Introduction = () => {
                 <img src={photo} alt="Edgar" />
             </figure>
             <div className="Text-part">
-                <h1>Edgar Lopez Arroyo</h1>
+                <h1>Hello I am <strong>Edgar</strong></h1>
                 <em>Frontend Developer</em>
                 <p>
-                    Empathic, creative, competitive, honest and 
-                    responsible person, I am graduated from the 
-                    TECNM in Celaya and ethernal student from the
-                    web development technologies.
+                    I have worked with HTML, CSS, CSS Preprocessors,
+                    JavaScript, React.js, Webpack, Git and GitHub.
                 </p>
             </div>
             <Button
                 titleOfTheClass="Button-See-More" 
-                title="More About Edgar"
+                title="More About Me"
                 direction="/aboutme"
             />
         </section>
