@@ -9,7 +9,7 @@ export const Introduction = () => {
                 <img src={photo} alt="Edgar" />
             </figure>
             <div className="Text-part">
-                <h1>Hello I am <strong>Edgar</strong></h1>
+                <h1>Hello, I am <strong>Edgar</strong></h1>
                 <em>Frontend Developer</em>
                 <p>
                     I have worked with HTML, CSS, CSS Preprocessors,

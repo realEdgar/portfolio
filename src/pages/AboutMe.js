@@ -1,12 +1,13 @@
-import './styles.css'
-import logoPlatzi from '../../assets/logo-platzi.png';
-import logoTecNM from '../../assets/logo-tecno.jpg';
-import chessImage from '../../assets/chess-image.jpeg';
-import reading from '../../assets/reading.jpg'
-import correr from '../../assets/correr.jpg';
-import series from '../../assets/seriesandmovies.jpg';
+import './styles/aboutme.css'
+import logoPlatzi from '../assets/logo-platzi.png';
+import logoTecNM from '../assets/logo-tecno.jpg';
+import chessImage from '../assets/chess-image.jpeg';
+import reading from '../assets/reading.jpg'
+import correr from '../assets/correr.jpg';
+import series from '../assets/seriesandmovies.jpg';
 import { FaHtml5, FaCss3Alt, FaGitSquare, FaGithubAlt } from 'react-icons/fa';
 import { SiJavascript, SiSass, SiReact, SiWebpack } from 'react-icons/si'
+import { Tech } from '../components/Tech/Tech'
 
 export const AboutMe = () => {
     return (
@@ -64,38 +65,46 @@ export const AboutMe = () => {
             <div className="About-Technologies">
                 <h3>Technologies</h3>
                 <div className="icons-container">
-                    <div className="Item-Tech">
-                        <FaHtml5 className="iconHtml"/>
-                        <p>HTML 5</p>
-                    </div>
-                    <div className="Item-Tech">
-                        <FaCss3Alt className="iconCss"/>
-                        <p>CSS 3</p>
-                    </div>
-                    <div className="Item-Tech">
-                        <SiSass className="iconSass"/>
-                        <p>Sass</p>
-                    </div>
-                    <div className="Item-Tech">
-                        <SiJavascript className="iconJs"/>
-                        <p>JavaScript</p>
-                    </div>
-                    <div className="Item-Tech">
-                        <SiReact className="iconReact"/>
-                        <p>ReactJS</p>
-                    </div>
-                    <div className="Item-Tech">
-                        <FaGitSquare className="iconGit"/>
-                        <p>Git</p>
-                    </div>
-                    <div className="Item-Tech">
-                        <FaGithubAlt className="iconGithub"/>
-                        <p>GitHub</p>
-                    </div>
-                    <div className="Item-Tech">
-                        <SiWebpack className="iconWebpack"/>
-                        <p>Webpack</p>
-                    </div>
+                    <Tech
+                        Component={FaHtml5}
+                        nameClass="iconHtml"
+                        title="HTML 5"
+                    />
+                    <Tech
+                        Component={FaCss3Alt}
+                        nameClass="iconCss"
+                        title="CSS 3"
+                    />
+                    <Tech
+                        Component={SiSass}
+                        nameClass="iconSass"
+                        title="Sass"
+                    />
+                    <Tech
+                        Component={SiJavascript}
+                        nameClass="iconJs"
+                        title="JavaScript"
+                    />
+                    <Tech
+                        Component={SiReact}
+                        nameClass="iconReact"
+                        title="ReactJS"
+                    />
+                    <Tech
+                        Component={FaGitSquare}
+                        nameClass="iconGit"
+                        title="Git"
+                    />
+                    <Tech
+                        Component={FaGithubAlt}
+                        nameClass="iconGithub"
+                        title="GitHub"
+                    />
+                    <Tech
+                        Component={SiWebpack}
+                        nameClass="iconWebpack"
+                        title="Webpack"
+                    />
                 </div>                
             </div>
         </section>

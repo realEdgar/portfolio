@@ -1,0 +1,15 @@
+.ProjectsContainer {
+  width: 100%;
+  padding: 20px;
+}
+.ProjectsTitle {
+  text-align: center;
+  font-size:3rem;
+}
+.ItemsContainer {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
