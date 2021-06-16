@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { GrMenu, GrClose } from 'react-icons/gr'
-import logo from '../../assets/chess-logo.png'
+import { Logo } from '../Logo';
 import './styles/styles.css';
 
 export const Header = () => {
   const [show, setShow] = useState(false);
 
   function handleClick(ev) {
+    console.log(ev);
     if(show) {
       setShow(false);
     } else {
@@ -17,10 +18,7 @@ export const Header = () => {
 
   return (
     <header className="Header">
-      <div className="Profile-Container">
-        <img src={logo} alt="Brand" />
-        <h1 className="Logo">ela.DEV</h1>
-      </div>
+      <Logo />
       <div className="Menu-Container" onClick={handleClick}>
         {
           show ? <GrClose className="Icon-Style" /> : <GrMenu className="Icon-Style" />

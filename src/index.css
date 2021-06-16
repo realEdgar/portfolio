@@ -1,76 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 #root {
-    width: 100%;
-    min-width: 375px;
+  width: 100%;
+  min-width: 375px;
 }
 h1, h2, h3, h4 {
-    color: #092f6e;
+  color: #092f6e;
 }
 h2 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 h3 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 h4 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-
-
 .Item-Tech {
-    width: 80px;
-    margin: 10px;
-  }
-  .iconHtml {
-    width: 50px;
-    height: 50px;
-    color: orange;
-  }
-  .iconCss {
-    width: 50px;
-    height: 50px;
-    color: blue;
-  }
-  .iconSass {
-    width: 50px;
-    height: 50px;
-    color: purple;
-  }
-  .iconJs {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    color: yellow;
-  }
-  .iconReact {
-    width: 50px;
-    height: 50px;
-    color: lightseagreen;
-  }
-  .iconGit {
-    width: 50px;
-    height: 50px;
-    color: red;
-  }
-  .iconGithub {
-    width: 50px;
-    height: 50px;
-    color: black;
-  }
-  .iconWebpack {
-    width: 50px;
-    height: 50px;
-    color: greenyellow;
-  }
+  width: 80px;
+  margin: 10px;
+}
+.iconHtml {
+  width: 50px;
+  height: 50px;
+  color: orange;
+}
+.iconCss {
+  width: 50px;
+  height: 50px;
+  color: blue;
+}
+.iconSass {
+  width: 50px;
+  height: 50px;
+  color: purple;
+}
+.iconJs {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  color: yellow;
+}
+.iconReact {
+  width: 50px;
+  height: 50px;
+  color: lightseagreen;
+}
+.iconGit {
+  width: 50px;
+  height: 50px;
+  color: red;
+}
+.iconGithub {
+  width: 50px;
+  height: 50px;
+  color: black;
+}
+.iconWebpack {
+  width: 50px;
+  height: 50px;
+  color: greenyellow;
+}
+.iconGithubTwo {
+  width: 50px;
+  height: 50px;
+  color: #000;
+  margin-right: 10px;
+}
+.iconLinked {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  color: #092f6e;
+}
+.iconMail {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.Profile-Container {
+  border-radius: 5px;
+}
+.Profile-Container .Logo {
+  font-size: 2.5rem;
+  color: #092f6e;
+}
+.Logo::after {
+  content: "<<";
+  margin-left: 5px;
+  color: #092f6e;
+}
+.Logo::before {
+  content: ">>";
+  margin-right: 5px;
+  color:#8e0303;
+}
+.Profile-Container .Logo span {
+  color: #8e0303;
+}

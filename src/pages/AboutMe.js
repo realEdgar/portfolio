@@ -46,7 +46,7 @@ export const AboutMe = () => {
                 <section className="container-items">
                     <div className="Item-Hobby">
                         <img src={chessImage} alt="Board" />
-                        <p>Play Chess: I have won some regional tournaments</p>
+                        <p>Play Chess</p>
                     </div>
                     <div className="Item-Hobby">
                         <img src={reading} alt="Book" />

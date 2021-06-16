@@ -6,6 +6,7 @@ import batata from '../assets/batata.png'
 import googleClone from '../assets/googleclone.png'
 import landing from '../assets/landing.png'
 import crowfund from '../assets/crowfund.png'
+import portfolio from '../assets/portfolio.png'
 import './styles/projects.css'
 
 export const Projects = () => {
@@ -14,6 +15,13 @@ export const Projects = () => {
             <h1 className="ProjectsTitle">Projects</h1>
             <section className="ProjectContainer">
                 <div className="ItemsContainer">
+                    <Project
+                        title="My Portfolio"
+                        src={portfolio}
+                        description="descripcion del project"
+                    >
+                        <Tech Component={SiReact} nameClass="iconReact" title="ReactJS" />
+                    </Project>
                     <Project
                         title="Crowdfunding Page"
                         src={crowfund}
