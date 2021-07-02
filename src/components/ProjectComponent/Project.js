@@ -1,7 +1,7 @@
 import './styles.css';
 
 export const Project = ({link, title, src, children}) => {
-  return (    
+  return (
     <article className="ProjectCard" >
       <figure className="ProjectImage">
         <img src={src} alt={title} />
