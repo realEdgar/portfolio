@@ -6,12 +6,20 @@ import reading from '../assets/reading.jpg'
 import correr from '../assets/correr.jpg';
 import series from '../assets/seriesandmovies.jpg';
 import { FaHtml5, FaCss3Alt, FaGitSquare, FaGithubAlt } from 'react-icons/fa';
-import { SiJavascript, SiSass, SiReact, SiWebpack } from 'react-icons/si'
+import { 
+    SiJavascript,
+    SiSass,
+    SiReact,
+    SiWebpack,
+    SiStyledComponents,
+    SiPython,
+    SiRedux 
+} from 'react-icons/si'
 import { Tech } from '../components/Tech/Tech'
 
 export const AboutMe = () => {
     return (
-        <section className="About-Me-Section">
+        <section className="About-Me-Section" id="aboutme">
             <h2 className="About-Title">About me</h2>
             <em>"I am trying to improve my skills every single day of my life."</em>
             <div className="About-Me">
@@ -105,7 +113,22 @@ export const AboutMe = () => {
                         nameClass="iconWebpack"
                         title="Webpack"
                     />
-                </div>                
+                    <Tech
+                        Component={SiStyledComponents}
+                        nameClass="iconStyled"
+                        title="Styled Components"
+                    />
+                    <Tech
+                        Component={SiPython}
+                        nameClass="iconPython"
+                        title="Python"
+                    />
+                    <Tech
+                        Component={SiRedux}
+                        nameClass="iconRedux"
+                        title="Redux"
+                    />
+                </div>
             </div>
         </section>
     )

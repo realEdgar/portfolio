@@ -1,5 +1,4 @@
 import photo from '../../assets/photo.png'
-import { Button } from '../Button'
 import './styles.css'
 
 export const Introduction = () => {
@@ -16,11 +15,6 @@ export const Introduction = () => {
                     JavaScript, React.js, Webpack, Git and GitHub.
                 </p>
             </div>
-            <Button
-                titleOfTheClass="Button-See-More" 
-                title="More About Me"
-                direction="/aboutme"
-            />
         </section>
     )
-}
+};

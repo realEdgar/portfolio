@@ -6,8 +6,7 @@
     display: grid;
     grid-template: 0.1fr 0.7fr 0.1fr / 1fr;
     grid-template-areas: 'photo'
-                         'text'
-                         'button';
+                         'text';
     align-content: center;
     align-content: space-around;
     text-align: center;
@@ -40,45 +39,17 @@
     text-align: justify;
     line-height: 2.5rem;
 }
-.Button-See-More {
-    width: 200px;
-    height: 40px;
-    margin: 20px auto;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: transparent;
-    grid-area: button;
-}
-.Button-See-More a {
-    text-decoration: underline;
-    color: #092f6e;
-}
-.Button-See-More:hover {
-    transition: 1s;
-    background-color: #092f6e;
-}
-.Button-See-More:hover a {
-    text-decoration: none;
-    color: #fff;
-    opacity: 1;
-}
-
 @media (min-width: 880px) {
     .Intro {
         padding: 40px 40px 0;
         display: grid;
-        grid-template-rows: 0.6fr 0.4fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 0.6fr 0.4fr;
-        grid-template-areas: "text photo"
-                             "button photo";
+        grid-template-areas: "text photo";
         place-content: center;
     }
-    a:hover {
-        opacity: 0.6;
-    }
     .Text-part {
-        align-self: end;
+        align-self: center;
     }
     .Pic-part {
         margin: 0;
@@ -87,8 +58,5 @@
     .Pic-part img {
         width: 240px;
         height: 280px;
-    }
-    .Button-See-More {
-        align-self: center;
     }
 }

@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +33,10 @@
     margin-bottom: 10px;
     font-size: 1.6rem;
     color: rgb(142, 3, 3);
+    text-decoration: underline;
+}
+.footer .section__social-media .social-media__container a:hover {
+    opacity: 0.6;
 }
 .SkillsTitle {
     margin-bottom: 20px;
@@ -40,7 +44,7 @@
     color: rgb(142, 3, 3);
 }
 .SkillsContainer  {
-    border: 2px solid rgb(142, 3, 3);
+    /* border: 2px solid rgb(142, 3, 3); */
     padding: 10px;
 }
 .SkillsContainer td {
@@ -62,5 +66,8 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
+    }
+    .footer .section__social-media .social-media__container {
+        flex-direction: row;
     }
 }

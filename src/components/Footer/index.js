@@ -1,16 +1,14 @@
 import { SiLinkedin } from 'react-icons/si'
 import { FaGithubAlt } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
-import { Logo } from '../Logo'
 
 import './styles/styles.css'
 
 export const Footer = () => {
   return(
-    <footer className="footer">
-      <Logo />
+    <footer className="footer" id="contact">
       <section className="section__social-media">
-        <h2 className="social-media__title">Find me on:</h2>
+        <h2 className="social-media__title">Contact</h2>
         <div className="social-media__container">
             <a href="https://github.com/realEdgar" target="blank" ><FaGithubAlt className="iconGithubTwo"/>GitHub</a>
             <a href="https:/www.linkedin.com/in/dev-edgar-lopez" target="blank" ><SiLinkedin className="iconLinked" />LinkedIn</a>

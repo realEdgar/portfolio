@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { GrMenu, GrClose } from 'react-icons/gr'
 import { Logo } from '../Logo';
 import './styles/styles.css';
@@ -26,19 +25,19 @@ export const Header = () => {
         {
           show && <nav className="Nav-Bar">
             <ul className="List-Nav">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/aboutme">About Me</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/contacto">Contact</Link></li>
+            <li><a href="/">Home</a></li>
+              <li><a href="#aboutme">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         }
         <nav className="Nav-Bar2">
             <ul className="List-Nav2">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/aboutme">About Me</Link></li>
-              <li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/contacto">Contact</Link></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#aboutme">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>     
       </div>
