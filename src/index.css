@@ -3,17 +3,19 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
 html {
   font-size: 62.5%;
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  min-width: 360px;
 }
 #root {
   width: 100%;
-  min-width: 375px;
+  min-width: 360px;
+  
 }
 h1, h2, h3, h4 {
   color: #092f6e;
